@@ -24,9 +24,17 @@
 
 #  JP_readme_generator <a name="about-project"></a>
 
-このプログラムを作成するにあたって背景として、gitを使用する際、README.mdファイルの煩わしさを覚えていた。UNIXベースのOSでgitを使用するとなった場合に、いちいちゼロから直打ちで作製する事に煩わしさを覚えていた。Readmeファイルを質問に答える形で半自動での作製をしてくれるツールは既に存在しているが、日本語の対応
+このプログラムを作成するにあたって背景として、gitを使用する際、README.mdファイルの作製が面倒であった。UNIXベースのOSでgitを使用するとなった場合に、さらにいちいちゼロから直打ちで作製する事に煩わしさを覚えていた。
+Readmeファイルを質問に答える形で半自動での作製をしてくれるツールは既に存在しているが、質問形式で日本語の対応のmdファイルを作成する事が出来なかった。
+
+私の主な貢献は以下のとおりである。
+- 質問形式で回答していく半自動readme.mdジェネレーターの日本語版対応のupgrade.
+- 同時に、日本語で記述されたmarkdownファイルのpdf化の実装.
 
 ##  Screenshot <a name="screenshot"></a>
+
+実際に生成されたpdfファイルは以下の通りとなっている。
+
 
 <img src="./screenshot.png" width=468 height=300 alt="screenshot" />
 
@@ -35,27 +43,18 @@
 
 ##  技術スタック  <a name="tech-stack"></a>
 - Ruby
-- pdfreader
-- none
-- none2
+- mupdf (to check result)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ##  特徴  <a name="key-features"></a>
-- this program
-- is
-- so
-- good
+- このプログラムを実行すると、煩わしかったreadme.mdを"日本語で"書き出してくれます。
+- 出力されたmdファイルをpdfに書き出してくれます。
+- 書き出されたファイルは、実行したディレクトリに保存されます。
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-##  Live Demo  <a name="live-demo"></a>
-
-こちらをクリックするとデモが見れます。 [live demo website here](htht).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-##  スタートするためには  <a name="getting-started"></a>
+##  実行するためには  <a name="getting-started"></a>
 
 ローカルにインストールしたのちに、実行してください。
 ### Prerequisites
@@ -68,7 +67,7 @@
 
 ```sh
 cd my-project
-git clone git@github.com:shopippi/日本語対応README_Generator.git .
+git clone git@github.com:shopippi/JP_README_generator.git .
 ```
 
 ### Installation
@@ -76,32 +75,58 @@ git clone git@github.com:shopippi/日本語対応README_Generator.git .
 インストール方法:
 
 ```sh
-gem install
+sudo chmod +x ./main
 ```
+optional
+```sh
+echo $PATH
+```
+optional
+```sh
+mv .././JP_README_generator ./$PATH
+```
+
 
 ### Usage
 
 プログラムの使い方:
 
 ```sh
-ruby main.rb
+./main
 ```
 
 ### Run tests
 
 プログラムの実行方法:
 
+それぞれの質問に答えていくと、それに基づいてファイルを生成してくれます。
 ```sh
-rspec spec
+GitHub Username >> 
+Your Name >> 
+Your Email >>
+Your LinkedIn >>
+Repo Name >> 
+Project Title >> 
+Description >> 
+Demo Link >> 
+License Type >> 
+Choose Interpreter: ["node", "ruby"] >>
+Tech Stack [1] >> 
+Tech Stack [2] >> 
+Tech Stack [3] >>
+Features [1] >> 
+Features [2] >> 
+Future Features [1] >> 
+Future Features [2] >> 
+Include TOC? ["y", "n"] >> 
+Include Screenshot? ["y", "n"] >> 
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ##  著者  <a name="author"></a>
 
-I am always looking for ways to improve my project. If you have any suggestions or ideas, I would love to hear from you.
-
-**高橋翔太郎**
+**shopippi**
 
 [![Github](https://img.shields.io/badge/GitHub-673AB7?style=for-the-badge&logo=github&logoColor=white)](https://github.com/shopippi)
 [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/shotaro-takahashi-962949298)
