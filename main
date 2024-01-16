@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+system('./bin/reme-gen')
+
+system('ruby ./md2pdf_jp/md2pdf.rb ./readme.md ./output.pdf')
+

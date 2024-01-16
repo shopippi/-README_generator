@@ -1,0 +1,149 @@
+<% interp = INTERPRETERS[interp_name] %>
+
+<a name="readme-top"></a>
+[![Contributors](https://img.shields.io/github/contributors/<%= username %>/<%= repo_name %>)](https://github.com/<%= username %>/<%= repo_name %>/graphs/contributors)
+[![LastUpdate](https://img.shields.io/github/last-commit/<%= username %>/<%= repo_name %>)](https://github.com/<%= username %>/<%= repo_name %>/commits/main)
+[![Stargazers](https://img.shields.io/github/stars/<%= username %>/<%= repo_name %>)](https://github.com/<%= username %>/<%= repo_name %>/stargazers)
+[![Issues](https://img.shields.io/github/issues/<%= username %>/<%= repo_name %>)](https://github.com/<%= username %>/<%= repo_name %>/issues)
+[![License](https://img.shields.io/github/license/<%= username %>/<%= repo_name %>)](https://github.com/<%= username %>/<%= repo_name %>/blob/main/LICENSE)
+
+% if include_toc
+<details>
+<summary>Table of Contents</summary>
+
+% HEADINGS.each do |key, data|
+% if key == "about".to_sym
+- [<%= data[:emoji] %> <%= title %>](#<%= data[:link] %>)
+% else 
+  - [<%= data[:emoji] %> <%= data[:text] %>](#<%= data[:link] %>)
+% end
+% end
+</details>
+% end
+
+# <%= HEADINGS[:about][:emoji] %> <%= title %> <a name="<%= HEADINGS[:about][:link] %>"></a>
+
+<%= description.empty? ? "This project is just awesome." : description %>
+
+
+% if include_ss
+## <%= HEADINGS[:screenshot][:emoji] %> <%= HEADINGS[:screenshot][:text] %> <a name="<%= HEADINGS[:screenshot][:link] %>"></a>
+
+<img src="https://via.placeholder.com/468x300?text=App+Screenshot+Here" width=468 height=300 alt="screenshot" />
+
+% end
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+% unless tech_stack.empty?
+## <%= HEADINGS[:tech_stack][:emoji] %> <%= HEADINGS[:tech_stack][:text] %>  <a name="<%= HEADINGS[:tech_stack][:link] %>"></a>
+% tech_stack.each do |tech|
+- <%= tech %>
+% end
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+% end
+
+% unless features.empty?
+## <%= HEADINGS[:key_features][:emoji] %> <%= HEADINGS[:key_features][:text] %>  <a name="<%= HEADINGS[:key_features][:link] %>"></a>
+% features.each do |feature|
+- <%= feature %>
+% end 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+% end
+
+% unless demo_link.empty?
+## <%= HEADINGS[:live_demo][:emoji] %> <%= HEADINGS[:live_demo][:text] %>  <a name="<%= HEADINGS[:live_demo][:link] %>"></a>
+
+こちらをクリックするとデモが見れます。 [live demo website here](<%= demo_link %>).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+% end
+
+## <%= HEADINGS[:getting_started][:emoji] %> <%= HEADINGS[:getting_started][:text] %>  <a name="<%= HEADINGS[:getting_started][:link] %>"></a>
+
+ローカルにインストールしたのちに、実行してください。
+### Prerequisites
+
+プログラム実行に必要なパッケージなど [<%= interp[:name].capitalize %>](<%= interp[:link] %>) installed on your machine.
+
+### Setup
+
+セットアップの方法.
+
+```sh
+cd my-project
+git clone git@github.com:<%= username %>/<%= repo_name %>.git .
+```
+
+### Installation
+
+インストール方法:
+
+```sh
+<%= interp[:install_cmd] %>
+
+```
+
+### Usage
+
+プログラムの使い方:
+
+```sh
+<%= interp[:run_cmd] %>
+
+```
+
+### Run tests
+
+プログラムの実行方法:
+
+```sh
+<%= interp[:test_cmd] %>
+
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## <%= HEADINGS[:author][:emoji] %> <%= HEADINGS[:author][:text] %>  <a name="<%= HEADINGS[:author][:link] %>"></a>
+
+I am always looking for ways to improve my project. If you have any suggestions or ideas, I would love to hear from you.
+
+**<%= author_name %>**
+
+[![Github](https://img.shields.io/badge/GitHub-673AB7?style=for-the-badge&logo=github&logoColor=white)](https://github.com/<%= username %>)
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/<%= linkedin %>)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:<%= gmail %>)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+% unless future_features.empty?
+## <%= HEADINGS[:future_features][:emoji] %> <%= HEADINGS[:future_features][:text] %>  <a name="<%= HEADINGS[:future_features][:link] %>"></a>
+% future_features.each do |todo|
+- [ ] <%= todo %>
+% end
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+% end
+
+## <%= HEADINGS[:contribution][:emoji] %> <%= HEADINGS[:contribution][:text] %>  <a name="<%= HEADINGS[:contribution][:link] %>"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## <%= HEADINGS[:support][:emoji] %> <%= HEADINGS[:support][:text] %>  <a name="<%= HEADINGS[:support][:link] %>"></a>
+
+If you like this project, please consider giving it a star.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## <%= HEADINGS[:license][:emoji] %> <%= HEADINGS[:license][:text] %> <a name="<%= HEADINGS[:license][:link] %>"></a>
+
+This project is [<%= license.upcase %>](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+*This readme is generated by [readme-generator](https://github.com/IndieCoderMM/readme-generator)*
+*And shopippi contributed to the Japanese localization and template enhancement.
