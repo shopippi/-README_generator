@@ -1,15 +1,15 @@
 
 <a name="readme-top"></a>
-[![Contributors](https://img.shields.io/github/contributors/shopippi/日本語対応README_Generator)](https://github.com/shopippi/日本語対応README_Generator/graphs/contributors)
-[![LastUpdate](https://img.shields.io/github/last-commit/shopippi/日本語対応README_Generator)](https://github.com/shopippi/日本語対応README_Generator/commits/main)
-[![Stargazers](https://img.shields.io/github/stars/shopippi/日本語対応README_Generator)](https://github.com/shopippi/日本語対応README_Generator/stargazers)
-[![Issues](https://img.shields.io/github/issues/shopippi/日本語対応README_Generator)](https://github.com/shopippi/日本語対応README_Generator/issues)
-[![License](https://img.shields.io/github/license/shopippi/日本語対応README_Generator)](https://github.com/shopippi/日本語対応README_Generator/blob/main/LICENSE)
+[![Contributors](https://img.shields.io/github/contributors/shopippi/JP_README_Generator)](https://github.com/shopippi/JP_README_Generator/graphs/contributors)
+[![LastUpdate](https://img.shields.io/github/last-commit/shopippi/JP_README_Generator)](https://github.com/shopippi/JP_README_Generator/commits/main)
+[![Stargazers](https://img.shields.io/github/stars/shopippi/JP_README_Generator)](https://github.com/shopippi/JP_README_Generator/stargazers)
+[![Issues](https://img.shields.io/github/issues/shopippi/JP_README_Generator)](https://github.com/shopippi/JP_README_Generator/issues)
+[![License](https://img.shields.io/github/license/shopippi/JP_README_Generator)](https://github.com/shopippi/JP_README_Generator/blob/main/LICENSE)
 
 <details>
 <summary>Table of Contents</summary>
 
-- [ 日本語対応readme_generator](#about-project)
+- [ JP_readme_generator](#about-project)
   - [ Screenshot](#screenshot)
   - [ 技術スタック](#tech-stack)
   - [ 特徴](#key-features)
@@ -22,13 +22,13 @@
   - [ License](#license)
 </details>
 
-#  日本語対応readme_generator <a name="about-project"></a>
+#  JP_readme_generator <a name="about-project"></a>
 
-none
+このプログラムを作成するにあたって背景として、gitを使用する際、README.mdファイルの煩わしさを覚えていた。UNIXベースのOSでgitを使用するとなった場合に、いちいちゼロから直打ちで作製する事に煩わしさを覚えていた。Readmeファイルを質問に答える形で半自動での作製をしてくれるツールは既に存在しているが、日本語の対応
 
 ##  Screenshot <a name="screenshot"></a>
 
-<img src="https://via.placeholder.com/468x300?text=App+Screenshot+Here" width=468 height=300 alt="screenshot" />
+<img src="./screenshot.png" width=468 height=300 alt="screenshot" />
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
