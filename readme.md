@@ -129,21 +129,24 @@ Include Screenshot? ["y", "n"] >>
 **shopippi**
 
 [![Github](https://img.shields.io/badge/GitHub-673AB7?style=for-the-badge&logo=github&logoColor=white)](https://github.com/shopippi)
-[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]([https://linkedin.com/in/https://www.linkedin.com/in/shotaro-takahashi-962949298](https://www.linkedin.com/in/shotaro-takahashi-962949298))
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]([https://linkedin.com/in/https://www.linkedin.com/in/shotaro-takahashi-962949298](https://www.linkedin.com/in/shotaro-takahashi-962949298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app))
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:takahashi@shopippi.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ##  今後の展望  <a name="future-features"></a>
-- [ ] none
-- [ ] but
-- [ ] fight
+- [ ] 特定ファイルから定型文を読み込む。例:githubやlinkedinのアカウント情報
+- [ ] 保存先を訪ねる
+- [ ] 絵文字への対応
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ##  引用  <a name="contribution"></a>
 
-Contributions, issues, and feature requests are welcome!
+https://github.com/IndieCoderMM/readme-generator
+https://fonts.google.com/
+https://qiita.com/chihayafuru/items/f48f088dbb231fd6d13b
+https://qiita.com/mitsu48/items/34875bbc8ba00760fe27
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
